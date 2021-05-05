@@ -1,9 +1,13 @@
 # NoViz-Vibrate
 
 This repository hosts all the code for the NoViz-Vibrate prototype. This prototype explored using the haptics of an Apple Watch to give users security notifications.  
+
 **_NotificationServer_**: This is a Node.js server, it has a route "/notify", if you send a "GET" request to this route, it will emit an event over Socket.io that will cause the Apple Watch to vibrate.  
+
 **_NotifyWatch_**: This is where the iOS/WatchOS code is that is responsible for listening for a Socket.io event and causing the Apple Watch to vibrate.  
+
 **_SSLExtension_**: This is a Firefox browser extension that will check if the website you're on has a valid SSL certificate, if not it will notify the Node.js server.  
+
 **_URLExtension_**: This is a Firefox browser extension that will check if the URL you're currently on is part of an allowlist if not, it will notify the Node.js server.  
 
 === Credits ===
