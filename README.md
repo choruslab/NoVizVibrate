@@ -12,7 +12,7 @@ This repository hosts all the code for the NoViz-Vibrate prototype. This prototy
 
 === Credits ===
 
-Credits go to Daniela Napoli and Sebastian Navas for the layout of this README file and SSLExtension.
+Credits go to Daniela Napoli and Sebastian Navas for the layout of this README file and the SSLExtension.
 
 ## Documentation
 
