@@ -1,0 +1,14 @@
+# Mac OS X Finder
+.DS_Store
+
+# Private Key
+*.pem
+
+# Xcode
+xcuserdata/
+project.xcworkspace/
+DerivedData/
+
+# Build
+build/
+*.[oa]

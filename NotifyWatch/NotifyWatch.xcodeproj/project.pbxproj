@@ -1,0 +1,782 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		36899877B487C5F1B5BCF34B /* libPods-NotifyWatch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E76EC1B68FEECF4BAC5135CE /* libPods-NotifyWatch.a */; };
+		6A3E42D025BC42CE00A23D3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3E42CF25BC42CE00A23D3B /* AppDelegate.swift */; };
+		6A3E42D225BC42CE00A23D3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3E42D125BC42CE00A23D3B /* SceneDelegate.swift */; };
+		6A3E42D425BC42CE00A23D3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3E42D325BC42CE00A23D3B /* ViewController.swift */; };
+		6A3E42D725BC42CE00A23D3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A3E42D525BC42CE00A23D3B /* Main.storyboard */; };
+		6A3E42D925BC42D000A23D3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A3E42D825BC42D000A23D3B /* Assets.xcassets */; };
+		6A3E42DC25BC42D000A23D3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A3E42DA25BC42D000A23D3B /* LaunchScreen.storyboard */; };
+		6A3E42EA25BC44DD00A23D3B /* SocketIOManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3E42E925BC44DC00A23D3B /* SocketIOManager.swift */; };
+		6A3E42F225BC467E00A23D3B /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A3E42F025BC467E00A23D3B /* Interface.storyboard */; };
+		6A3E42F425BC468100A23D3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A3E42F325BC468100A23D3B /* Assets.xcassets */; };
+		6A3E42FB25BC468200A23D3B /* NotifyWatchApp Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6A3E42FA25BC468200A23D3B /* NotifyWatchApp Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6A3E430025BC468200A23D3B /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3E42FF25BC468200A23D3B /* InterfaceController.swift */; };
+		6A3E430225BC468200A23D3B /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3E430125BC468200A23D3B /* ExtensionDelegate.swift */; };
+		6A3E430425BC468200A23D3B /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3E430325BC468200A23D3B /* NotificationController.swift */; };
+		6A3E430625BC468200A23D3B /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3E430525BC468200A23D3B /* ComplicationController.swift */; };
+		6A3E430825BC468300A23D3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A3E430725BC468300A23D3B /* Assets.xcassets */; };
+		6A3E430D25BC468300A23D3B /* NotifyWatchApp.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 6A3E42EE25BC467E00A23D3B /* NotifyWatchApp.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FE8D9E92CE51D3303820F9AE /* libPods-NotifyWatchApp Extension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9856F2D52494A025652BBD /* libPods-NotifyWatchApp Extension.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6A3E42FC25BC468200A23D3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A3E42C425BC42CE00A23D3B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A3E42F925BC468200A23D3B;
+			remoteInfo = "NotifyWatchApp Extension";
+		};
+		6A3E430B25BC468300A23D3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A3E42C425BC42CE00A23D3B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A3E42ED25BC467E00A23D3B;
+			remoteInfo = NotifyWatchApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6A3E431125BC468300A23D3B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6A3E42FB25BC468200A23D3B /* NotifyWatchApp Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A3E431525BC468300A23D3B /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				6A3E430D25BC468300A23D3B /* NotifyWatchApp.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		28734FCF25BD4E7600064275 /* NotifyWatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NotifyWatch.entitlements; sourceTree = "<group>"; };
+		28734FDF25BD514000064275 /* NotifyWatchApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NotifyWatchApp.entitlements; sourceTree = "<group>"; };
+		28734FE025BD515400064275 /* NotifyWatchApp Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "NotifyWatchApp Extension.entitlements"; sourceTree = "<group>"; };
+		28734FEB25BD5F7F00064275 /* NotifyWatchApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NotifyWatchApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		6A3E42CC25BC42CE00A23D3B /* NotifyWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotifyWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A3E42CF25BC42CE00A23D3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6A3E42D125BC42CE00A23D3B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6A3E42D325BC42CE00A23D3B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6A3E42D625BC42CE00A23D3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6A3E42D825BC42D000A23D3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6A3E42DB25BC42D000A23D3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6A3E42DD25BC42D000A23D3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A3E42E925BC44DC00A23D3B /* SocketIOManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketIOManager.swift; sourceTree = "<group>"; };
+		6A3E42EE25BC467E00A23D3B /* NotifyWatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotifyWatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A3E42F125BC467E00A23D3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		6A3E42F325BC468100A23D3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6A3E42F525BC468100A23D3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A3E42FA25BC468200A23D3B /* NotifyWatchApp Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "NotifyWatchApp Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A3E42FF25BC468200A23D3B /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		6A3E430125BC468200A23D3B /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		6A3E430325BC468200A23D3B /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		6A3E430525BC468200A23D3B /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		6A3E430725BC468300A23D3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6A3E430925BC468300A23D3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A3E430A25BC468300A23D3B /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		85438F42C1A85CBB5A841C4A /* Pods-NotifyWatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotifyWatch.debug.xcconfig"; path = "Target Support Files/Pods-NotifyWatch/Pods-NotifyWatch.debug.xcconfig"; sourceTree = "<group>"; };
+		B11D5BA1E152EC92DE350970 /* Pods-NotifyWatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotifyWatch.release.xcconfig"; path = "Target Support Files/Pods-NotifyWatch/Pods-NotifyWatch.release.xcconfig"; sourceTree = "<group>"; };
+		CC9856F2D52494A025652BBD /* libPods-NotifyWatchApp Extension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NotifyWatchApp Extension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E76EC1B68FEECF4BAC5135CE /* libPods-NotifyWatch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NotifyWatch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F17885BFCA7091FF486C96D1 /* Pods-NotifyWatchApp Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotifyWatchApp Extension.release.xcconfig"; path = "Target Support Files/Pods-NotifyWatchApp Extension/Pods-NotifyWatchApp Extension.release.xcconfig"; sourceTree = "<group>"; };
+		F3DB4E3F8A64E9CEDA5BA18E /* Pods-NotifyWatchApp Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotifyWatchApp Extension.debug.xcconfig"; path = "Target Support Files/Pods-NotifyWatchApp Extension/Pods-NotifyWatchApp Extension.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6A3E42C925BC42CE00A23D3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36899877B487C5F1B5BCF34B /* libPods-NotifyWatch.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A3E42F725BC468200A23D3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE8D9E92CE51D3303820F9AE /* libPods-NotifyWatchApp Extension.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D552246A7948D4E21A645048 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6553A906354E16DD5F635EB5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				85438F42C1A85CBB5A841C4A /* Pods-NotifyWatch.debug.xcconfig */,
+				B11D5BA1E152EC92DE350970 /* Pods-NotifyWatch.release.xcconfig */,
+				F3DB4E3F8A64E9CEDA5BA18E /* Pods-NotifyWatchApp Extension.debug.xcconfig */,
+				F17885BFCA7091FF486C96D1 /* Pods-NotifyWatchApp Extension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6A3E42C325BC42CE00A23D3B = {
+			isa = PBXGroup;
+			children = (
+				6A3E42CE25BC42CE00A23D3B /* NotifyWatch */,
+				6A3E42EF25BC467E00A23D3B /* NotifyWatchApp */,
+				6A3E42FE25BC468200A23D3B /* NotifyWatchApp Extension */,
+				6A3E42CD25BC42CE00A23D3B /* Products */,
+				6553A906354E16DD5F635EB5 /* Pods */,
+				D004C750F44483C4E6D7EC71 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6A3E42CD25BC42CE00A23D3B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6A3E42CC25BC42CE00A23D3B /* NotifyWatch.app */,
+				6A3E42EE25BC467E00A23D3B /* NotifyWatchApp.app */,
+				6A3E42FA25BC468200A23D3B /* NotifyWatchApp Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6A3E42CE25BC42CE00A23D3B /* NotifyWatch */ = {
+			isa = PBXGroup;
+			children = (
+				28734FCF25BD4E7600064275 /* NotifyWatch.entitlements */,
+				6A3E42CF25BC42CE00A23D3B /* AppDelegate.swift */,
+				6A3E42D125BC42CE00A23D3B /* SceneDelegate.swift */,
+				6A3E42D325BC42CE00A23D3B /* ViewController.swift */,
+				6A3E42E925BC44DC00A23D3B /* SocketIOManager.swift */,
+				6A3E42D525BC42CE00A23D3B /* Main.storyboard */,
+				6A3E42D825BC42D000A23D3B /* Assets.xcassets */,
+				6A3E42DA25BC42D000A23D3B /* LaunchScreen.storyboard */,
+				6A3E42DD25BC42D000A23D3B /* Info.plist */,
+				28734FEB25BD5F7F00064275 /* NotifyWatchApp-Bridging-Header.h */,
+			);
+			path = NotifyWatch;
+			sourceTree = "<group>";
+		};
+		6A3E42EF25BC467E00A23D3B /* NotifyWatchApp */ = {
+			isa = PBXGroup;
+			children = (
+				28734FDF25BD514000064275 /* NotifyWatchApp.entitlements */,
+				6A3E42F025BC467E00A23D3B /* Interface.storyboard */,
+				6A3E42F325BC468100A23D3B /* Assets.xcassets */,
+				6A3E42F525BC468100A23D3B /* Info.plist */,
+			);
+			path = NotifyWatchApp;
+			sourceTree = "<group>";
+		};
+		6A3E42FE25BC468200A23D3B /* NotifyWatchApp Extension */ = {
+			isa = PBXGroup;
+			children = (
+				28734FE025BD515400064275 /* NotifyWatchApp Extension.entitlements */,
+				6A3E42FF25BC468200A23D3B /* InterfaceController.swift */,
+				6A3E430125BC468200A23D3B /* ExtensionDelegate.swift */,
+				6A3E430325BC468200A23D3B /* NotificationController.swift */,
+				6A3E430525BC468200A23D3B /* ComplicationController.swift */,
+				6A3E430725BC468300A23D3B /* Assets.xcassets */,
+				6A3E430925BC468300A23D3B /* Info.plist */,
+				6A3E430A25BC468300A23D3B /* PushNotificationPayload.apns */,
+			);
+			path = "NotifyWatchApp Extension";
+			sourceTree = "<group>";
+		};
+		D004C750F44483C4E6D7EC71 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E76EC1B68FEECF4BAC5135CE /* libPods-NotifyWatch.a */,
+				CC9856F2D52494A025652BBD /* libPods-NotifyWatchApp Extension.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6A3E42CB25BC42CE00A23D3B /* NotifyWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A3E42E025BC42D000A23D3B /* Build configuration list for PBXNativeTarget "NotifyWatch" */;
+			buildPhases = (
+				C19FAE960F168F17C0C98CAE /* [CP] Check Pods Manifest.lock */,
+				6A3E42C825BC42CE00A23D3B /* Sources */,
+				6A3E42C925BC42CE00A23D3B /* Frameworks */,
+				6A3E42CA25BC42CE00A23D3B /* Resources */,
+				6A3E431525BC468300A23D3B /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6A3E430C25BC468300A23D3B /* PBXTargetDependency */,
+			);
+			name = NotifyWatch;
+			productName = NotifyWatch;
+			productReference = 6A3E42CC25BC42CE00A23D3B /* NotifyWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6A3E42ED25BC467E00A23D3B /* NotifyWatchApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A3E431225BC468300A23D3B /* Build configuration list for PBXNativeTarget "NotifyWatchApp" */;
+			buildPhases = (
+				6A3E42EC25BC467E00A23D3B /* Resources */,
+				6A3E431125BC468300A23D3B /* Embed App Extensions */,
+				D552246A7948D4E21A645048 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6A3E42FD25BC468200A23D3B /* PBXTargetDependency */,
+			);
+			name = NotifyWatchApp;
+			productName = NotifyWatchApp;
+			productReference = 6A3E42EE25BC467E00A23D3B /* NotifyWatchApp.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		6A3E42F925BC468200A23D3B /* NotifyWatchApp Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A3E430E25BC468300A23D3B /* Build configuration list for PBXNativeTarget "NotifyWatchApp Extension" */;
+			buildPhases = (
+				C603D0E604A6D0619AC276FE /* [CP] Check Pods Manifest.lock */,
+				6A3E42F625BC468200A23D3B /* Sources */,
+				6A3E42F725BC468200A23D3B /* Frameworks */,
+				6A3E42F825BC468200A23D3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NotifyWatchApp Extension";
+			productName = "NotifyWatchApp Extension";
+			productReference = 6A3E42FA25BC468200A23D3B /* NotifyWatchApp Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6A3E42C425BC42CE00A23D3B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					6A3E42CB25BC42CE00A23D3B = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					6A3E42ED25BC467E00A23D3B = {
+						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
+					};
+					6A3E42F925BC468200A23D3B = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 6A3E42C725BC42CE00A23D3B /* Build configuration list for PBXProject "NotifyWatch" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6A3E42C325BC42CE00A23D3B;
+			productRefGroup = 6A3E42CD25BC42CE00A23D3B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6A3E42CB25BC42CE00A23D3B /* NotifyWatch */,
+				6A3E42ED25BC467E00A23D3B /* NotifyWatchApp */,
+				6A3E42F925BC468200A23D3B /* NotifyWatchApp Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6A3E42CA25BC42CE00A23D3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A3E42DC25BC42D000A23D3B /* LaunchScreen.storyboard in Resources */,
+				6A3E42D925BC42D000A23D3B /* Assets.xcassets in Resources */,
+				6A3E42D725BC42CE00A23D3B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A3E42EC25BC467E00A23D3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A3E42F425BC468100A23D3B /* Assets.xcassets in Resources */,
+				6A3E42F225BC467E00A23D3B /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A3E42F825BC468200A23D3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A3E430825BC468300A23D3B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C19FAE960F168F17C0C98CAE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NotifyWatch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C603D0E604A6D0619AC276FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NotifyWatchApp Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6A3E42C825BC42CE00A23D3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A3E42EA25BC44DD00A23D3B /* SocketIOManager.swift in Sources */,
+				6A3E42D425BC42CE00A23D3B /* ViewController.swift in Sources */,
+				6A3E42D025BC42CE00A23D3B /* AppDelegate.swift in Sources */,
+				6A3E42D225BC42CE00A23D3B /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A3E42F625BC468200A23D3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A3E430425BC468200A23D3B /* NotificationController.swift in Sources */,
+				6A3E430625BC468200A23D3B /* ComplicationController.swift in Sources */,
+				6A3E430225BC468200A23D3B /* ExtensionDelegate.swift in Sources */,
+				6A3E430025BC468200A23D3B /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6A3E42FD25BC468200A23D3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A3E42F925BC468200A23D3B /* NotifyWatchApp Extension */;
+			targetProxy = 6A3E42FC25BC468200A23D3B /* PBXContainerItemProxy */;
+		};
+		6A3E430C25BC468300A23D3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A3E42ED25BC467E00A23D3B /* NotifyWatchApp */;
+			targetProxy = 6A3E430B25BC468300A23D3B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6A3E42D525BC42CE00A23D3B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A3E42D625BC42CE00A23D3B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6A3E42DA25BC42D000A23D3B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A3E42DB25BC42D000A23D3B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		6A3E42F025BC467E00A23D3B /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A3E42F125BC467E00A23D3B /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6A3E42DE25BC42D000A23D3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6A3E42DF25BC42D000A23D3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6A3E42E125BC42D000A23D3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85438F42C1A85CBB5A841C4A /* Pods-NotifyWatch.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NotifyWatch/NotifyWatch.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HNGTWV9PFY;
+				INFOPLIST_FILE = NotifyWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.HS.NotifyWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6A3E42E225BC42D000A23D3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B11D5BA1E152EC92DE350970 /* Pods-NotifyWatch.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NotifyWatch/NotifyWatch.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HNGTWV9PFY;
+				INFOPLIST_FILE = NotifyWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.HS.NotifyWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6A3E430F25BC468300A23D3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3DB4E3F8A64E9CEDA5BA18E /* Pods-NotifyWatchApp Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "NotifyWatchApp Extension/NotifyWatchApp Extension.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HNGTWV9PFY;
+				INFOPLIST_FILE = "NotifyWatchApp Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.HS.NotifyWatch.watchkitapp.watchkitExtension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Debug;
+		};
+		6A3E431025BC468300A23D3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F17885BFCA7091FF486C96D1 /* Pods-NotifyWatchApp Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "NotifyWatchApp Extension/NotifyWatchApp Extension.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HNGTWV9PFY;
+				INFOPLIST_FILE = "NotifyWatchApp Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.HS.NotifyWatch.watchkitapp.watchkitExtension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Release;
+		};
+		6A3E431325BC468300A23D3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = NotifyWatchApp/NotifyWatchApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HNGTWV9PFY;
+				IBSC_MODULE = NotifyWatchApp_Extension;
+				INFOPLIST_FILE = NotifyWatchApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.HS.NotifyWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Debug;
+		};
+		6A3E431425BC468300A23D3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = NotifyWatchApp/NotifyWatchApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HNGTWV9PFY;
+				IBSC_MODULE = NotifyWatchApp_Extension;
+				INFOPLIST_FILE = NotifyWatchApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.HS.NotifyWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6A3E42C725BC42CE00A23D3B /* Build configuration list for PBXProject "NotifyWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A3E42DE25BC42D000A23D3B /* Debug */,
+				6A3E42DF25BC42D000A23D3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A3E42E025BC42D000A23D3B /* Build configuration list for PBXNativeTarget "NotifyWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A3E42E125BC42D000A23D3B /* Debug */,
+				6A3E42E225BC42D000A23D3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A3E430E25BC468300A23D3B /* Build configuration list for PBXNativeTarget "NotifyWatchApp Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A3E430F25BC468300A23D3B /* Debug */,
+				6A3E431025BC468300A23D3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A3E431225BC468300A23D3B /* Build configuration list for PBXNativeTarget "NotifyWatchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A3E431325BC468300A23D3B /* Debug */,
+				6A3E431425BC468300A23D3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6A3E42C425BC42CE00A23D3B /* Project object */;
+}

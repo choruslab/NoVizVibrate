@@ -1,0 +1,6 @@
+module Pods_NotifyWatchApp_Extension {
+  umbrella header "Pods-NotifyWatchApp Extension-umbrella.h"
+
+  export *
+  module * { export * }
+}

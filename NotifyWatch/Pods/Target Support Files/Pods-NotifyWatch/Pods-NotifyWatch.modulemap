@@ -1,0 +1,6 @@
+module Pods_NotifyWatch {
+  umbrella header "Pods-NotifyWatch-umbrella.h"
+
+  export *
+  module * { export * }
+}
