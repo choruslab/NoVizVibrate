@@ -12,7 +12,7 @@ This repository hosts all the code for the NoViz-Vibrate prototype. This prototy
 
 === Credits ===
 
-The SSLExtension is a simpler implementation of the one Daniela Napoli and Sebastian Navas built for the NoViz-Thermal project.  
+Credits go to Daniela Napoli and Sebastian Navas for the layout of this README file and SSLExtension.
 
 ## Documentation
 
